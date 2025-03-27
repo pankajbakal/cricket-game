@@ -1,55 +1,81 @@
 # Cricket Game
 
-A web-based cricket game built with HTML5 Canvas and JavaScript.
+A browser-based cricket game built using HTML5 Canvas. Experience the excitement of cricket with this interactive game.
 
-## 🎮 Features
+## Features
 
-- Realistic cricket physics and ball trajectories
-- Multiple bowling types (Yorker, Bouncer, Normal, Offbreak, Slower)
-- Various batting shots
-- Score tracking and wickets system
+- HTML5 Canvas-based gaming experience
+- Real-time gameplay mechanics
+- Modern JavaScript implementation
 - Responsive design
 
-## 🚀 Getting Started
+## Prerequisites
 
-### Prerequisites
-- Node.js (v12 or higher)
-- npm (v6 or higher)
+- Node.js (v14 or higher)
+- npm (comes with Node.js)
 
-### Installation
+## Installation
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/cricket-game.git
+git clone https://github.com/pankajbakal/cricket-game.git
 cd cricket-game
+```
+
+2. Install dependencies:
+```bash
 npm install
 ```
 
-### Running the Game
+## Development
+
+Run the development server:
 ```bash
-npm start
-```
-Visit `http://localhost:3000` in your browser.
-
-## 🎯 How to Play
-
-- **Move Batsman**: Up/Down Arrow Keys
-- **Hit Ball**: Space Bar (Hold to charge power)
-- **Restart Game**: Enter (when game over)
-
-## 🛠️ Development
-
-### Project Structure
-```
-cricket-game/
-├── objects/          # Game objects (Ball, Batsman, etc.)
-├── sprites/          # Sprite management
-├── utils/           # Utility classes
-├── docs/            # Documentation
-├── game.js         # Main game logic
-└── index.html      # Game entry point
+npm run dev
 ```
 
-### Build and Test
+The game will be available at `http://localhost:8080`
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm start` - Start lite-server
+- `npm run build` - Build for production
+- `npm run clean` - Clean build directories
+- `npm test` - Run tests
+
+## Building for Production
+
 ```bash
-npm run build     # Build production version
-npm run test      # Run tests
+npm run build
 ```
+
+The built files will be available in the `dist` directory.
+
+## Tech Stack
+
+- HTML5 Canvas
+- JavaScript (ES6+)
+- Webpack
+- Babel
+- Core.js
+
+## Game Mechanics
+
+### Batting System
+- Hit probability is based on player skill level
+- Possible runs: 0, 1, 2, 3, 4, and 6
+- Run distribution follows realistic cricket probabilities
+- Wicket chance increases with lower skill levels
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+
+Pankaj Bakal
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.

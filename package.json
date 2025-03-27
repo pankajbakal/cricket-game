@@ -6,15 +6,20 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/cricket-game"
+    "url": "https://github.com/pankajbakal/cricket-game.git"
   },
   "license": "MIT",
+  "author": {
+    "name": "Pankaj Bakal"
+  },
   "scripts": {
     "clean": "rimraf node_modules dist",
     "start": "lite-server",
     "build": "webpack --mode production",
     "dev": "webpack serve --mode development",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install && chmod ug+x .husky/*",
+    "postinstall": "npm run prepare"
   },
   "dependencies": {
     "core-js": "^3.30.0"
@@ -31,7 +36,10 @@
     "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.88.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "eslint": "^8.43.0"
   },
   "engines": {
     "node": ">=14.0.0"

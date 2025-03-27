@@ -1,0 +1,76 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    max-width: 100vw;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+canvas {
+    border: 2px solid #000;
+    background: #4CAF50;
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#hitButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+.movement-controls {
+    margin-bottom: 10px;
+}
+
+.movement-controls button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .instructions {
+        font-size: 14px;
+    }
+}
